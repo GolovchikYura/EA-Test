@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>TEST-TASK</title>
+</head>
+<body>
+    <div class="left-spot">
+        <img src="img/left-spot.svg" alt="left-spot">
+    </div>
+    <div class="right-spot">
+        <img src="img/right-spot.svg" alt="left-spot">
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="header-logo _container">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+        </header>
+        <main class="section">
+            <div class="section-title-block block">
+                <div class="block__container _container">
+                    <div class="block-title">
+                        <h1>Under Construction</h1>
+                    </div>
+                    <div class="block-sub-title">
+                        <p>We're making lots of improvements and will be back soon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-count count">
+                <div class="count__container _container">
+                    <div class="count__body">
+                        <div class="count-item">
+                            <span id="days">00</span>
+                            <span class="label"><img src="img/days.svg" alt="days"></span>
+                            <span class="label-reduced"><img src="img/reduced-days.svg" alt="days"></span>
+                        </div>
+                        <div class="count-item">
+                            <span class="colon">:</span>
+                        </div>
+                        <div class="count-item">
+                            <span id="hours">00</span>
+                            <span class="label"><img src="img/hours.svg" alt="hours"></span>
+                            <span class="label-reduced"><img src="img/reduced-hours.svg" alt="hours"></span>
+                        </div>
+                        <div class="count-item">
+                            <span class="colon">:</span>
+                        </div>
+                        <div class="count-item">
+                            <span id="minutes">00</span>
+                            <span class="label"><img src="img/minutes.svg" alt="minutes"></span>
+                            <span class="label-reduced"><img src="img/reduced-minutes.svg" alt="minutes"></span>
+                        </div>
+                        <div class="count-item">
+                            <span class="colon">:</span>
+                        </div>
+                        <div class="count-item">
+                            <span id="seconds">00</span>
+                            <span class="label"><img src="img/seconds.svg" alt="seconds"></span>
+                            <span class="label-reduced"><img src="img/reduced-seconds.svg" alt="seconds"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-button button">
+                <div class="button__container _container">
+                    <div class="button-title"><h4>Check our event page when you wait:</h4></div>
+                    <div class="button__link">
+                        <a href="https://golovchikyura.github.io/AMBAR-WOOD/home.html" class="link-button"><p>Go to the event</p><span><img src="img/arrow-right.svg" alt="arrow-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__container _container">
+                <div class="footer__input">
+                    <div class="form-container">
+                        <form action="" id="form">
+                                <input autocomplete="off" id="email" type="email" name="form[]" data-error="Ошибка" placeholder="Enter your Email and get notified" class="input-email" required>
+                                <button onclick="closePopup()" type="submit" class="button-email"><img src="img/arrow-right.svg" alt="arrow-right"></button>
+                        </form>
+                    </div>
+                   <div class="footer-accordion-button">
+                        <a href="#" class="open-accordion" id="link"><p>Other Events</p><img src="img/arrow-down.svg" alt="arrow-down"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="section-accordion accordion" id="accordion">
+            <div class="accordion__container _container">
+                <div class="title-accordion">
+                    <h1>All events</h1>
+                </div>
+                <div class="accordion-vertical__body">
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Hawaiian party</p>
+                                <h2>01</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content expanded">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>01</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Hawaiian party</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Мafia party</p>
+                                <h2>02</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>02</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Мafia party</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Party</p>
+                                <h2>03</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>03</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Party</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Party on the beach</p>
+                                <h2>04</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>04</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Party on the beach</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Home Security</p>
+                                <h2>05</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>05</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Home Security</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Network Design & Implementation</p>
+                                <h2>06</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>06</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Network Design & Implementation</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>System Design & Engineering</p>
+                                <h2>07</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>07</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>System Design & Engineering</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-vertical__items items-accordion-vertical">
+                        <div class="items-accordion-vertical__button items-button">
+                            <div class="items-button-contents">
+                                <p>Client Care Plans</p>
+                                <h2>08</h2>
+                            </div>
+                        </div>
+                        <div class="items-accordion-vertical__content items-content">
+                            <div class="item-content__image">
+                                <img src="img/img-accordion.jpg" alt="img-accordion">
+                                <div class="items-content-on-image on-image">
+                                    <div class="on-image__big-number">
+                                        <span>08</span>
+                                    </div>
+                                    <div class="on-image__body">
+                                        <div class="on-image__title">
+                                            <h3>Client Care Plans</h3>
+                                        </div>
+                                        <div class="on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="on-image__button">
+                                            <a href="#" class="on-image-button-link">More information</a>
+                                            <div class="hover-button">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-horisontal__body">
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>01</h2>
+                                <p>Custom Home Automation</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content active">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Custom Home Automation</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>01</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>02</h2>
+                                <p>Whole Home Audio Solutions</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Whole Home Audio Solutions</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>03</h2>
+                                <p>Distributed Video</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Distributed Video</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>03</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>04</h2>
+                                <p>Lighting Control</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Lighting Control</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>04</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>05</h2>
+                                <p>Home Security</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Home Security</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>05</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>06</h2>
+                                <p>Network Design & Implementation</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Network Design & Implementation</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>06</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>07</h2>
+                                <p>System Design & Engineering</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>System Design & Engineering</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>07</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-horisontal__items items-accordion-horisontal">
+                        <div class="items-accordion-horisontal__button items-horisontal-button">
+                            <div class="items-horisontal-button-contents">
+                                <h2>08</h2>
+                                <p>Client Care Plans</p>
+                            </div>
+                        </div>
+                        <div class="items-accordion-horisontal__content items-horisontal-content">
+                            <div class="item-horisontal-content__image">
+                                <img src="img/img-horisontal-accordion.jpg" alt="img-horisontal-accordion">
+                                <div class="items-horisontal-content-on-image horisontal-on-image">
+                                    <div class="horisontal-on-image__body">
+                                        <div class="horisontal-on-image__title">
+                                            <h3>Client Care Plans</h3>
+                                        </div>
+                                        <div class="horisontal-on-image__date">
+                                            <p>13.02.2023</p>
+                                        </div>
+                                        <div class="horisontal-on-image__button">
+                                            <a href="#" class="horisontal-on-image-button-link">More information</a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="horisontal-on-image__big-number">
+                                        <span>08</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------- -->
+        <div class="popup-overlay" id="popupOverlayTrue">
+            <div class="popup">
+              <button onclick="closePopup()" class="button-close-icon"><img src="img/close.svg" alt="close"></button>
+              <div class="popup-title">
+                <h1>SUCCESS!</h1>
+              </div>
+              <div class="popup-sub-title">
+                <p>You have successfully subscribed to the email newsletter</p>
+              </div>
+              <button onclick="closePopup()" class="button-close">Close</button>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlayFalse">
+            <div class="popup">
+              <button onclick="closePopup()" class="button-close-icon"><img src="img/close.svg" alt="close"></button>
+              <div class="popup-title">
+                <h1>OHH NOO!</h1>
+              </div>
+              <div class="popup-sub-title">
+                <p>Something went wrong</p>
+              </div>
+              <button onclick="closePopup()" class="button-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
